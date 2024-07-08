@@ -1,3 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.completePage{
+    background-color: #E5E5E5;
+}
 .logo{
     padding: 40px;
+}
+
+.encriptadorCompleto{
+    display: flex;
+    width: 100%;
+    height: 75vh;
+}
+
+
+.leftPage{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    height: auto;
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 80px;
+}
+
+.rightPage{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 40px 40px 40px 40px;
+    margin-right: 40px;
+    height: 80vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo{
+    padding: 0% 10% 0% 10%;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #343A40;
+    font-weight: 700;
+    text-align: center;
+}
+
+.mensaje{
+    padding: 0% 10% 0% 10%;
+    font-family: "Inter", sans-serif;
+    color: #495057;  
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.textoEncriptar{
+    flex: 1;
+    padding: 1px;
+    height: auto;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #0A3871;
+    background-color: #E5E5E5;
+}
+
+.textoEncriptar::placeholder {
+    color: #0A3871; 
+}
+
+.generalInformation{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.exclamacion{
+    width: 16px;
+    height: 16px;
+}
+
+.info{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #495057;
+    padding: 8px;
+}
+
+.buttons{
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: stretch;
+    margin-top: auto;
+}
+
+.encriptar{
+    width: 100%;
+    height: 60px;
+    background-color: #0A3871;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    border-radius: 24px;
+    margin-right: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.desencriptar{
+    width: 100%;
+    height: 60px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: #0A3871 1px solid;
+    cursor: pointer;
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
