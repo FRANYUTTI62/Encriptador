@@ -6,6 +6,7 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logo.png">
+    <script src="app.js" defer></script>
     
 </head>
 <body class="completePage">
@@ -21,16 +22,18 @@
                     <p class="info">Solo letras minúscular y sin acentos.</p>
                 </section>
                 <section class="buttons">
-                    <button class="encriptar"type="submit">Encriptar</button>
-                    <button class="desencriptar"type="submit">Desencriptar</button>
+                    <button class="encriptar" id="encriptar" type="submit" onclick=encryptButton()>Encriptar</button>
+                    <button class="desencriptar" id="desencriptar" type="submit" onclick=desencryptButton()>Desencriptar</button>
                 </section>
             </section>
 
         </section>
         <section class="rightPage">
-            <img class="muñeco" src="img/muneco.png" alt="Muñeco">
-            <h1 class="titulo">Ningún mensaje fue encontrado</h1>
-            <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <img class="muñeco" id="muñeco" src="img/muneco.png" alt="Muñeco">
+            <h1 class="titulo" id="titulo">Ningún mensaje fue encontrado</h1>
+            <p class="mensaje" id="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <p class="resultadoMensaje" id="resultadoMensaje"></p>
+            <button class="copiar" id="copiar" type="submit" onclick=copyButton()>Copiar</button>
         </section>
     </main>
 </body>
