@@ -4,7 +4,9 @@
     background-color: #E5E5E5;
 }
 .logo{
-    padding: 40px;
+    padding-left: 2%;
+    padding-bottom: 40px;
+    padding-top: 10px;
 }
 
 .encriptadorCompleto{
@@ -181,4 +183,66 @@
     background-color: #0A3871; /* Darker shade on hover */
     color: #FFF; /* Keep text color white or change if desired */
     transform: scale(1.05); /* Slightly increase the size */
+}
+
+@media screen and (max-width: 768px) {
+    .encriptadorCompleto{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        position: relative;
+    }
+
+    .leftPage{
+        width: 90%;
+        padding: 5% 5% 5% 5%;
+    }
+
+    .rightPage{
+        width: 80%;
+        margin: 0;
+        padding: 5% 5% 5% 5%;
+        height: 30vh;
+    }
+    .muñeco{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .encriptadorCompleto{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        position: relative;
+    }
+
+    .leftPage{
+        width: 90%;
+        padding: 5% 5% 5% 5%;
+    }
+
+    .rightPage{
+        width: 80%;
+        margin: 0;
+        padding: 5% 5% 5% 5%;
+        height: 30vh;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .encriptar{
+        margin-right: 0;
+    }
+
+    .muñeco{
+        display: none;
+    }
+    
 }
